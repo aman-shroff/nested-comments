@@ -1,0 +1,160 @@
+* {
+  --bgColor: #efefef;
+}
+
+.App {
+  width: 90%;
+  margin: 10px auto;
+}
+
+.no-padding-left {
+  padding-left: 0px;
+}
+
+.comment-container {
+  background-color: var(--bgColor);
+  padding: 2px 10px 5px 10px;
+  border-radius: 5px;
+  border: 0.1px solid;
+  display: flex;
+  flex-flow: column nowrap;
+  gap: 5px;
+}
+
+.comment-container__header {
+  display: flex;
+  justify-content: flex-start;
+  width: 100%;
+  margin-top: 2px ;
+}
+
+.comment-container__title,
+.comment-sorter > span,
+.upward, .downward   {
+  font-size: 15px;
+  font-weight: 500;
+}
+
+.comment-container__body {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: flex-start;
+  gap: 10px;
+}
+
+input, textarea {
+  width: 98%;
+  margin: 0 2px;
+  padding: 5px;
+}
+
+.comment-container__footer {
+  display: flex;
+  justify-content: flex-end;
+  margin-right: 15px ;
+  align-items: center;
+}
+
+.comment-container__footer > button {
+  margin-right: 5px;
+  padding: 5px 10px;
+  border-radius: 4px;
+  border: 1px solid;
+  background-color: #3498db;
+  color: white;
+}
+
+
+/* Comment List Component JS */
+.comments-list {
+  display: flex;
+  flex-direction: column;
+  margin-top: 0px;
+}
+
+
+
+.comment {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  background-color: var(--bgColor);
+  padding: 2px 10px 5px 10px;
+  border: 0.1px solid;
+  border-radius: 5px;
+}
+
+.comment__header {
+  display: flex;
+  width: 100%;
+  flex-direction: row;
+  justify-content: space-between;
+}
+
+.comment__header > span {
+  font-size: 15px;
+  font-weight: 500;
+  width: 100%;
+}
+
+.comment__date {
+  text-align: end;
+}
+
+.comment__username {
+  text-align: start;
+}
+
+.comment__body {
+  width: 100%;
+  margin: 2px 5px 5px;
+  justify-content: space-between;
+  display: flex;
+  gap: 10px
+}
+
+.comment__footer {
+  display: flex;
+  flex-direction: row;
+  justify-content: flex-start;
+  width: 100%;
+}
+
+.comment__footer > button {
+  border: none;
+  background: none;
+  font-size: 12px;
+  cursor: pointer;
+  color: #3498db;
+}
+
+.comment {
+  margin: 10px 0 10px 0;
+}
+
+.comment__trashcan {
+  align-self: center;
+  border-radius: 50%;
+  border: 0px;
+  color: white;
+  background-color: rgb(156, 153, 153);
+  cursor: pointer;
+}
+
+
+.left-padding {
+  padding-left: 40px;
+}
+
+.comment-sorter {
+  display: flex;
+  justify-content: flex-end;
+}
+
+.comment-sorter__upward,
+.comment-sorter__downward {
+  background-color: white;
+  border: 0px;
+}
+
